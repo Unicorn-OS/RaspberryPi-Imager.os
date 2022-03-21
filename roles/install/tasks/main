@@ -1,5 +1,6 @@
 ---
-- name: Install a list of packages
-  apt:
-    pkg:
-    - 
+- name: Install via snapcraft
+  community.general.snap:
+    name:
+      - rpi-imager
+  become: true
